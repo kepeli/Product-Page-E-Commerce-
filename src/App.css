@@ -69,6 +69,13 @@ align-items: center;
   font-weight: 700px;
 
 }
+.emptyCart {
+  color:#6c757d;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
 
 /* NAVBAR COMPONENT */
 
@@ -80,7 +87,7 @@ align-items: center;
   top: 80px;
   background-color: white;
   border: 1px solid #6c757d;
-  border-radius: 15px;
+  border-radius: 9px;
   padding: 5px ;
 }
 .cartImage {
@@ -177,3 +184,61 @@ align-items: center;
   color: #6c757d;
 }
 /* BODY */
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .bodyInternalBorder {
+    flex-direction: column;
+  }
+
+  .imageBox,
+  .bodyContent {
+    padding: 0;
+  }
+
+  .imageButtons {
+    justify-content: center;
+  }
+
+  .bodyContent {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  h2 {
+    margin-top: 10px;
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .internalBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .ex {
+    display: none;
+  }
+
+  .menuOptions {
+    margin-bottom: 10px;
+  }
+
+  .options {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .rightMenuOptions {
+    margin-top: 10px;
+  }
+
+  .internalBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
