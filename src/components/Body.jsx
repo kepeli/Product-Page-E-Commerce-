@@ -23,10 +23,10 @@ export default function Body({
 
   const changeImage = (url) => {
     setDisplayImage(url);
-  }
+  };
   const increment = () => {
     setCount(count + 1);
-  }
+  };
   const decrement = () => {
     // returns higher value between count and 0
     // if count is greater than 0 then it returns count
@@ -36,17 +36,14 @@ export default function Body({
     let newCount = Math.max(count - 1, 0);
     // setCount to new Count
     setCount(newCount);
-  }
+  };
   const addToCart = () => {
-    // setOrderCount(parseInt(count));
-    setStore((prev) => [...prev, count]);
-    setAddCart(parseInt(count));
-    setOrderCount(parseInt(orderCount + 1));
-
-   
-
-    
-  }
+    if (count > 0) {
+      setStore((prev) => [...prev, count]);
+      setAddCart(parseInt(count));
+      setOrderCount(parseInt(orderCount + 1));
+    }
+  };
 
   return (
     <div>
@@ -114,7 +111,7 @@ export default function Body({
               <span>50%</span>
             </div>
             <p className="discountedPrize">$250.00</p>
-            <div>
+            <div className="btnContainer">
               <button onClick={decrement} className="decrementButton btns">
                 -
               </button>

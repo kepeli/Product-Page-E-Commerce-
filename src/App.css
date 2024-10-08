@@ -3,7 +3,7 @@
   font-family: Tesla;
   src: url(./assets/TESLA.ttf);
 }
-.logoName{
+.logoName {
   font-family: Tesla;
 }
 .externalBar {
@@ -17,14 +17,14 @@
   width: 80%;
   height: 100%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   /* margin-top: 30px; */
   border-bottom: 1px solid silver;
   /* padding-bottom: 20px; */
 }
 
-.options{
+.options {
   margin-right: 10%;
   height: 100%;
   margin-top: 0;
@@ -32,24 +32,22 @@
 }
 .options:hover {
   /* border-bottom: 1px solid orangered; */
-  
 }
 .menuOptions {
   display: flex;
   align-items: center;
- 
 }
 .rightMenuOptions {
-display: flex;
-align-items: center;
-
+  display: flex;
+  align-items: center;
 }
 .profileImage {
-  border:3px solid orange;
+  border: 3px solid orange;
   border-radius: 50%;
   width: 40px;
 }
-.cart, .clientImage{
+.cart,
+.clientImage {
   margin-left: 16%;
 }
 .cart {
@@ -67,15 +65,13 @@ align-items: center;
   height: 15px;
   padding: 0 4px 0 4px;
   font-weight: 700px;
-
 }
 .emptyCart {
-  color:#6c757d;
+  color: #6c757d;
   display: flex;
   justify-content: center;
   padding-bottom: 15px;
 }
-
 
 /* NAVBAR COMPONENT */
 
@@ -88,10 +84,10 @@ align-items: center;
   background-color: white;
   border: 1px solid #6c757d;
   border-radius: 9px;
-  padding: 5px ;
+  padding: 5px;
 }
 .cartImage {
-  width:45px;
+  width: 45px;
   margin-right: 6px;
 }
 .cartBorder {
@@ -125,12 +121,11 @@ align-items: center;
   justify-content: center;
 }
 .bodyInternalBorder {
-width: 80%;
-display: flex;
-align-items: center;
-
+  width: 80%;
+  display: flex;
+  align-items: center;
 }
-.imageBox{
+.imageBox {
   width: 50%;
 }
 .image {
@@ -138,16 +133,15 @@ align-items: center;
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.button{
+.button {
   border: none;
 }
-.imageButtons{
+.imageButtons {
   display: flex;
 }
 .imageButton {
   width: 100%;
   border-radius: 10px;
-  
 }
 .bodyContent {
   margin-left: 8%;
@@ -160,7 +154,6 @@ align-items: center;
   font-weight: 600;
   width: 40px;
   height: 30px;
-  
 }
 
 .incrementButton {
@@ -169,12 +162,13 @@ align-items: center;
 
 .addToCart {
   border: none;
-  height:30px;
+  height: 30px;
   background-color: orangered;
   color: white;
   font-size: 19px;
   width: 200px;
 }
+
 .sneakerCompany {
   color: orangered;
   font-weight: 500;
@@ -184,7 +178,6 @@ align-items: center;
   color: #6c757d;
 }
 /* BODY */
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -211,14 +204,13 @@ align-items: center;
   }
 }
 
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   .internalBar {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .ex {
     display: none;
   }
@@ -240,5 +232,9 @@ align-items: center;
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .addToCart {
+    margin: 15px 0 20px 0;
   }
 }
